@@ -33,10 +33,10 @@ dy = (1,-1,0,0)
 """
 
 def BFS(shark_x, shark_y, shark_size):
-  #0visited[shark_x][shark_y] = 1 # 현재 위치를 1로 설정
+  visited[shark_x][shark_y] = 1 # 현재 위치를 1로 설정
   dq = deque()
   dq.append((shark_x,shark_y))
-  visited[shark_x][shark_y] = 1 # 현재 위치를 1로 설정
+  
   while dq :
     x, y = dq.popleft()
     for i in range(4) :
