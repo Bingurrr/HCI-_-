@@ -1,5 +1,5 @@
 ## 백준 16236
-## [https://www.acmicpc.net/problem/16236]
+## https://www.acmicpc.net/problem/16236
 
 from collections import deque
 
@@ -81,4 +81,3 @@ while True :
       break
 
 print(ret)
-
