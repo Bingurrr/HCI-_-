@@ -5,7 +5,7 @@ from collections import deque
 
 # 입력받기
 n = int(input())
-arr = [list(map(int, input().split())) for _ in range(n)]
+arr = [list(map(int, input().split())) for i in range(n)]
 
 
 # 상어 초기위치 찾기
@@ -51,7 +51,7 @@ def BFS(shark_x, shark_y, shark_size):
 
 
 while True :
-    visited = [[0] * n for _ in range(n)]
+    visited = [[0] * n for i in range(n)]
     BFS(shark_x, shark_y, shark_size)
     x = 0
     y = 0
