@@ -50,26 +50,22 @@ def BFS(shark_x, shark_y, shark_size):
       dq.append((new_x,new_y)) # 자식노드 queue에 삽입
 
 
-def min_distance(shark_size) :
-  x = 0
-  y = 0
-  min_dist = 400
-  for i in range(n) :
-    for j in range(n) :
-      if visited[i][j] != 0 and arr[i][j] < shark_size and arr[i][j] > 0 :
-        if min_dist > visited[i][j] -1 :
-          min_dist = visited[i][j] -1;
-          x = i
-          y = j
-  return (x, y, min_dist)
-
-
 while True :
     visited = [[0] * n for _ in range(n)]
     BFS(shark_x, shark_y, shark_size)
-    x, y, distance = min_distance(shark_size)
-    if distance != 400 :
-      ret += distance
+    x = 0
+    y = 0
+    min_distance = 400
+    for i in range(n) :
+      for j in range(n) :
+        if visited[i][j] != 0 and arr[i][j] < shark_size and arr[i][j] > 0 :
+          if min_distance > visited[i][j] -1 :
+            min_distance = visited[i][j] -1
+            x = i
+            y = j
+    
+    if min_distance != 400 :
+      ret += min_distance
       grow = grow -1
       shark_x = x
       shark_y = y
