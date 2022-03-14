@@ -1,5 +1,6 @@
 ## 백준 16236
 ## https://www.acmicpc.net/problem/16236
+## https://garnet-magazine-f1e.notion.site/1-8a666c6ac49b42c4afe35f46d12bfb81
 
 from collections import deque
 
@@ -55,7 +56,7 @@ while True :
     BFS(shark_x, shark_y, shark_size)
     x = 0
     y = 0
-    min_distance = 400
+    min_distance = 400 # 최대 공간의 크기 20 * 20 
     for i in range(n) :
       for j in range(n) :
         if visited[i][j] != 0 and arr[i][j] < shark_size and arr[i][j] > 0 :
