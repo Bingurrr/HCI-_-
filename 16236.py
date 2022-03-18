@@ -1,6 +1,6 @@
 ## 백준 16236
-## https://www.acmicpc.net/problem/16236
-## https://garnet-magazine-f1e.notion.site/1-8a666c6ac49b42c4afe35f46d12bfb81
+## 문제 링크 : https://www.acmicpc.net/problem/16236
+## 풀이 : https://garnet-magazine-f1e.notion.site/1-8a666c6ac49b42c4afe35f46d12bfb81
 
 from collections import deque
 
@@ -29,7 +29,7 @@ dy = (1,-1,0,0)
 """
   BFS를 구성하는 법 
   1. 시작위치를 queue에 넣는다
-  2. queue에서 하나를 꺼내고 그 자식노드를 넣는다. 단 넣을 때 조건 생각
+  2. queue에서 하나를 꺼내고 그 자식노드를 넣는다. 단 넣을 때 문제 조건 생각
   3. queue가 빌때까지 반복한다.
 """
 
@@ -56,7 +56,7 @@ while True :
     BFS(shark_x, shark_y, shark_size)
     x = 0
     y = 0
-    min_distance = 400 # 최대 공간의 크기 20 * 20 
+    min_distance = 400 # 최대  20 * 20 
     for i in range(n) :
       for j in range(n) :
         if visited[i][j] != 0 and arr[i][j] < shark_size and arr[i][j] > 0 :
