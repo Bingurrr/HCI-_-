@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/16282
 #include <iostream>
 #include <cmath>
 using namespace std;
