@@ -34,9 +34,9 @@ int main(){
 
     string ret = to_string(pow(2,n));
 
-    int x = ret.find('.');				ret = ret.substr(0, x);				
-
-	ret[ret.length() - 1] -= 1;	
+    int x = ret.find('.');				
+.   ret = ret.substr(0, x);				
+.   ret[ret.length() - 1] -= 1;	
 
     cout << ret << endl;
 
